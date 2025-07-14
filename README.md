@@ -1,12 +1,37 @@
-# React + Vite
+# QUANTUMEDGE SOFTWARE - Freelance Marketplace Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **QUANTUMEDGE SOFTWARE**, a full-feature freelance/job marketplace web app where users can register, log in, browse professional jobs, apply, and manage their accounts. Inspired by platforms like Fiverr and Upwork.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Preview
 
-## Expanding the ESLint configuration
+> Coming soon...
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 🔐 User Registration & Login (with social login UI)
+- 📋 Job Listings (with budget, skills, attachments, etc.)
+- 💼 Apply to Jobs with Budget Input
+- 📂 Categories & Freelancers Dropdown
+- 🧭 Navigation Bar with Search & Select Category
+- 🖼️ Responsive UI with Modern Design
+- 🎨 Gradient themes (#071400 → #073a0b)
+- 🔄 Loading Spinner Component
+- 📱 Fully Responsive (Mobile & Desktop)
+- 🦾 Built with Tailwind CSS + React Icons
+
+---
+
+## 🛠 Tech Stack
+
+| Tech         | Usage                 |
+| ------------ | --------------------- |
+| React        | Frontend Framework    |
+| Tailwind CSS | Utility-first Styling |
+| React Icons  | Icons for UI          |
+| React Router | Client-side Routing   |
+
+---
