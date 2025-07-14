@@ -1,12 +1,13 @@
+// Jobs.jsx
 import { useEffect, useState } from "react";
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("https://api.mnimedu.com/api/browse/pro-jobs/")
+    fetch("/api/api/browse/pro-jobs/")// ✅ this is now proxied
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -14,19 +15,19 @@ const Jobs = () => {
         return res.json();
       })
       .then((data) => {
-        console.log("API Response:", data); // ✅ see full response
-        setJobs(data.data); // ✅ only set the array from "data"
+        console.log("API response:", data);
+        setJobs(data.data); // ✅ only job list
         setLoading(false);
       })
       .catch((err) => {
         console.error("Fetch error:", err);
-        setError(err.message);
+        setError("Failed to load jobs.");
         setLoading(false);
       });
   }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p className="text-red-500">Error: {error}</p>;
+  if (error) return <p className="text-red-500">{error}</p>;
 
   return (
     <div>
@@ -37,7 +38,6 @@ const Jobs = () => {
             <p><strong>Title:</strong> {job.title}</p>
             <p><strong>Category:</strong> {job.category?.title}</p>
             <p><strong>Rate:</strong> {job.rate_from} - {job.rate_to}</p>
-            <p><strong>Status:</strong> {job.status}</p>
           </li>
         ))}
       </ul>
