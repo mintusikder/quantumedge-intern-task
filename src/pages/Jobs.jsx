@@ -1,5 +1,6 @@
 // Jobs.jsx
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -26,7 +27,7 @@ const Jobs = () => {
       });
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner></Spinner>;
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
