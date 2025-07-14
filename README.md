@@ -35,3 +35,16 @@ Welcome to **QUANTUMEDGE SOFTWARE**, a full-feature freelance/job marketplace we
 | React Router | Client-side Routing   |
 
 ---
+
+## 🧪 Installation & Running Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/mintusikder/quantumedge-intern-task
+cd quantumedge
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
